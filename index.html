@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixel & Code PY | Desarrollo de Software & Sitios Web en Paraguay</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Pixel & Code PY - Software House en Itauguá, Paraguay. Desarrollamos páginas web corporativas, tiendas e-commerce, chatbots y sistemas a medida de alto impacto.">
+  <meta name="keywords" content="desarrollo de software paraguay, paginas web paraguay, ecommerce paraguay, chatbots whatsapp paraguay, sistemas a medida itaugua, pixel and code py">
+  <meta name="author" content="Pixel & Code PY">
+
+  <!-- Security Meta Tags -->
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="Pixel & Code PY - Convertimos ideas en soluciones digitales">
+  <meta property="og:description" content="Desarrollo de páginas web, tiendas online y sistemas a medida en Itauguá, Paraguay. Impulsa tu empresa con tecnología moderna.">
+  <meta property="og:image" content="assets/hero-bg.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/logo.png">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ==========================================
+       HEADER / NAVBAR STICKY
+       ========================================== -->
+  <header class="header">
+    <div class="container">
+      <a href="#inicio" class="brand-logo" aria-label="Pixel & Code PY Inicio">
+        <img src="assets/logo.png" alt="Pixel & Code PY Logo" id="main-logo" onerror="this.onerror=null; this.src='assets/logo-icon.svg';">
+        <div class="brand-text">
+          <span class="text-gradient-pixel">PIXEL</span> & <span class="text-gradient-code">CODE</span>
+          <span class="py-tag">PY</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+          <li><a href="#nosotros" class="nav-link">Sobre Nosotros</a></li>
+          <li><a href="#servicios-web" class="nav-link">Desarrollo Web</a></li>
+          <li><a href="#sistemas-code" class="nav-link">Sistemas & IA</a></li>
+          <li><a href="#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-right">
+        <!-- Botón Instagram -->
+        <a href="https://www.instagram.com/pixel_code1001?igsi=ZHUxOHlnNWQ2bTc=" target="_blank" rel="noopener noreferrer" class="btn btn-instagram btn-sm">
+          <i class="fa-brands fa-instagram"></i> Instagram
+        </a>
+
+        <!-- Botón Cotizar por WhatsApp -->
+        <a href="javascript:void(0)" onclick="openWhatsAppQuote('Cotiza por whatsapp')" class="btn btn-primary-orange btn-sm">
+          <i class="fa-brands fa-whatsapp"></i> Cotizar por WhatsApp
+        </a>
+
+        <!-- Botón Hamburguesa Mobile -->
+        <button class="mobile-toggle" aria-label="Abrir menú">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================
+       HERO SECTION (PORTADA)
+       ========================================== -->
+  <section id="inicio" class="hero">
+    <div class="hero-bg-overlay"></div>
+    <div class="hero-bg-glow hero-glow-1"></div>
+    <div class="hero-bg-glow hero-glow-2"></div>
+
+    <div class="container">
+      <div class="hero-content reveal-up">
+        <div class="hero-badge">
+          <span class="dot"></span> Software House & Agencia Digital — Itauguá, PY
+        </div>
+
+        <h1 class="hero-title">
+          Convertimos ideas en <br>
+          <span class="text-gradient-pixel">Soluciones</span>
+          <span class="text-gradient-code">Digitales</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          Diseñamos páginas web profesionales, tiendas e-commerce de alta conversión y sistemas de gestión a medida para potenciar el crecimiento de tu empresa en Paraguay.
+        </p>
+
+        <div class="hero-actions">
+          <a href="javascript:void(0)" onclick="openWhatsAppQuote('Solicitar cotización')" class="btn btn-primary-orange">
+            <i class="fa-brands fa-whatsapp"></i> Solicitar Cotización
+          </a>
+          <a href="#servicios-web" class="btn btn-secondary-pixel">
+            Ver Servicios <i class="fa-solid fa-arrow-down"></i>
+          </a>
+        </div>
+
+        <div class="hero-features-strip">
+          <div class="feature-item">
+            <i class="fa-solid fa-circle-check"></i> 100% Desarrollo a Medida
+          </div>
+          <div class="feature-item">
+            <i class="fa-solid fa-circle-check"></i> Soporte Local Garantizado
+          </div>
+          <div class="feature-item">
+            <i class="fa-solid fa-circle-check"></i> Optimizado para Ventas
+          </div>
+        </div>
+      </div>
+
+      <!-- Ventana de Código Interactiva (Terminal Card) -->
+      <div class="hero-visual reveal-up delay-2">
+        <div class="code-window">
+          <div class="code-header">
+            <div class="code-dots">
+              <span class="code-dot red"></span>
+              <span class="code-dot yellow"></span>
+              <span class="code-dot green"></span>
+            </div>
+            <div class="code-title">PixelAndCode.config.js</div>
+          </div>
+          <div class="code-body" id="code-typing">
+            <!-- El código interactivo se genera vía JS -->
+          </div>
+
+          <div class="hero-floating-card">
+            <div class="floating-icon">
+              <i class="fa-solid fa-rocket"></i>
+            </div>
+            <div class="floating-info">
+              <h4>Alto Rendimiento</h4>
+              <p>Sitios web ultra rápidos y SEO optimizados</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       SOBRE NOSOTROS
+       ========================================== -->
+  <section id="nosotros" class="section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text reveal-up">
+          <span class="section-tag pixel-tag">
+            <i class="fa-solid fa-building"></i> Quiénes Somos
+          </span>
+          <h2>Impulsamos la transformación digital de tu negocio</h2>
+          <p>
+            En <strong>Pixel & Code PY</strong> somos un equipo apasionado por el desarrollo de software y el diseño de experiencia de usuario con sede en <strong>Itauguá, Paraguay</strong>.
+          </p>
+          <p>
+            Fusionamos la creatividad estética del diseño <strong>PIXEL</strong> con la precisión del código estructurado <strong>CODE</strong>. Nos especializamos en brindar soluciones tecnológicas accesibles y efectivas para pymes y empresas que buscan destacar en el mercado digital.
+          </p>
+          <div class="location-badge">
+            <i class="fa-solid fa-location-dot"></i> Basados en Itauguá, Paraguay (Atención a todo el país)
+          </div>
+        </div>
+
+        <!-- Tarjeta Interactiva de Valor Diferencial (Ecosistema Pixel & Code PY) -->
+        <div class="tech-showcase-box reveal-up delay-2">
+          <div class="showcase-header">
+            <div class="pulse-indicator">
+              <span class="pulse-dot-green"></span>
+              <span class="showcase-status">NUESTRA PROPUESTA DE VALOR</span>
+            </div>
+            <div class="tech-badge">Ecosistema Pixel & Code</div>
+          </div>
+
+          <div class="pillars-container">
+            <!-- Pilar 1: Diseño PIXEL -->
+            <div class="pillar-card pixel-pillar">
+              <div class="pillar-icon">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+              </div>
+              <div class="pillar-content">
+                <h3>Diseño <span class="text-gradient-pixel">PIXEL</span> Impactante</h3>
+                <p>Interfaces ultramodernas con diseño responsive y estética premium enfocadas en captar clientes.</p>
+              </div>
+            </div>
+
+            <!-- Pilar 2: Código CODE -->
+            <div class="pillar-card code-pillar">
+              <div class="pillar-icon">
+                <i class="fa-solid fa-code"></i>
+              </div>
+              <div class="pillar-content">
+                <h3>Arquitectura <span class="text-gradient-code">CODE</span> Robusta</h3>
+                <p>Desarrollo a medida con carga en menos de 1 segundo, seguro y sin plantillas pesadas.</p>
+              </div>
+            </div>
+
+            <!-- Pilar 3: Automatización & IA -->
+            <div class="pillar-card ai-pillar">
+              <div class="pillar-icon">
+                <i class="fa-solid fa-brain"></i>
+              </div>
+              <div class="pillar-content">
+                <h3>IA & Automatización</h3>
+                <p>Chatbots inteligentes 24/7 y mini ERPs para automatizar las ventas y operaciones de tu empresa.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Technologies Bar -->
+          <div class="tech-tags-strip">
+            <span class="tag-title">TECNOLOGÍAS & HERRAMIENTAS:</span>
+            <div class="tags-wrapper">
+              <span class="tech-tag"><i class="fa-brands fa-html5" style="color: #E34F26;"></i> HTML5 / CSS3</span>
+              <span class="tech-tag"><i class="fa-brands fa-js" style="color: #F7DF1E;"></i> JavaScript</span>
+              <span class="tech-tag"><i class="fa-brands fa-whatsapp" style="color: #25D366;"></i> WhatsApp API</span>
+              <span class="tech-tag"><i class="fa-solid fa-robot" style="color: #4FB3E8;"></i> IA & Chatbots</span>
+              <span class="tech-tag"><i class="fa-solid fa-database" style="color: #F5A623;"></i> Cloud & BD</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       DESARROLLO WEB Y PRESENCIA DIGITAL (ÁREA PIXEL)
+       ========================================== -->
+  <section id="servicios-web" class="section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag pixel-tag">
+          <i class="fa-solid fa-laptop-code"></i> Área PIXEL
+        </span>
+        <h2>Desarrollo Web & Presencia Digital</h2>
+        <p>Soluciones orientadas a captar clientes, posicionar tu marca y generar ventas inmediatas.</p>
+      </div>
+
+      <div class="cards-grid">
+
+        <!-- Card 1: Landing Page -->
+        <div class="service-card reveal-up delay-1">
+          <div>
+            <div class="card-icon">
+              <i class="fa-solid fa-bullhorn"></i>
+            </div>
+            <h3 class="card-title">Landing Page</h3>
+            <p class="card-description">Página única optimizada para campañas de anuncios, lanzamientos y ventas rápidas de un producto o servicio específico.</p>
+            
+            <div class="card-includes-title">Lo que incluye:</div>
+            <ul class="card-bullets">
+              <li><i class="fa-solid fa-check"></i> Diseño 100% responsive (celular y PC)</li>
+              <li><i class="fa-solid fa-check"></i> Botón directo de pedidos por WhatsApp</li>
+              <li><i class="fa-solid fa-check"></i> Optimización de velocidad y conversión</li>
+              <li><i class="fa-solid fa-check"></i> Integración con Pixel de Meta / Google Ads</li>
+            </ul>
+          </div>
+
+          <div class="card-footer">
+            <button onclick="openWhatsAppQuote('Landing Page')" class="btn btn-secondary-pixel card-action-btn">
+              <i class="fa-brands fa-whatsapp"></i> Consultar Plan
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 2: Web Corporativa (Recomendado) -->
+        <div class="service-card featured reveal-up delay-2">
+          <div class="featured-badge">
+            <i class="fa-solid fa-star"></i> Más Elegido
+          </div>
+          <div>
+            <div class="card-icon">
+              <i class="fa-solid fa-globe"></i>
+            </div>
+            <h3 class="card-title">Web Corporativa / Profesional</h3>
+            <p class="card-description">Sitio web completo de 4 a 8 secciones para transmitir máxima confianza y presentar el portafolio integral de tu empresa.</p>
+
+            <div class="card-includes-title">Lo que incluye:</div>
+            <ul class="card-bullets">
+              <li><i class="fa-solid fa-check"></i> 4 a 8 Secciones (Inicio, Nosotros, Servicios, Contacto)</li>
+              <li><i class="fa-solid fa-check"></i> Formulario de contacto inteligente</li>
+              <li><i class="fa-solid fa-check"></i> Posicionamiento SEO básico en Google</li>
+              <li><i class="fa-solid fa-check"></i> Autoadministrable y soporte personalizado</li>
+            </ul>
+          </div>
+
+          <div class="card-footer">
+            <button onclick="openWhatsAppQuote('Web Corporativa Profesional')" class="btn btn-primary-orange card-action-btn">
+              <i class="fa-brands fa-whatsapp"></i> Consultar Plan
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 3: E-commerce -->
+        <div class="service-card reveal-up delay-3">
+          <div>
+            <div class="card-icon">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <h3 class="card-title">E-commerce (Tienda Online)</h3>
+            <p class="card-description">Plataforma de comercio electrónico para vender tus productos 24/7 con catálogo digital y pasarelas de pago.</p>
+
+            <div class="card-includes-title">Lo que incluye:</div>
+            <ul class="card-bullets">
+              <li><i class="fa-solid fa-check"></i> Catálogo ilimitado de productos y carrito</li>
+              <li><i class="fa-solid fa-check"></i> Pasarelas de pago locales e internacionales</li>
+              <li><i class="fa-solid fa-check"></i> Panel de gestión de inventario y pedidos</li>
+              <li><i class="fa-solid fa-check"></i> Cálculo automático de costos de envío</li>
+            </ul>
+          </div>
+
+          <div class="card-footer">
+            <button onclick="openWhatsAppQuote('Tienda E-commerce')" class="btn btn-secondary-pixel card-action-btn">
+              <i class="fa-brands fa-whatsapp"></i> Consultar Plan
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       SISTEMAS Y AUTOMATIZACIONES (ÁREA CODE)
+       ========================================== -->
+  <section id="sistemas-code" class="section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag code-tag">
+          <i class="fa-solid fa-gears"></i> Área CODE
+        </span>
+        <h2>Sistemas & Automatizaciones</h2>
+        <p>Software a medida y bots con inteligencia artificial para automatizar la gestión y atención al cliente.</p>
+      </div>
+
+      <div class="cards-grid cards-grid-2">
+
+        <!-- Card 1: Chatbots -->
+        <div class="service-card code-card reveal-up delay-1">
+          <div>
+            <div class="card-icon">
+              <i class="fa-solid fa-robot"></i>
+            </div>
+            <h3 class="card-title">Implementación de Chatbots</h3>
+            <p class="card-description">Automatización de atención al cliente en WhatsApp, Instagram o sitio web para capturar pedidos y responder preguntas 24/7 sin descanso.</p>
+
+            <div class="card-includes-title">Lo que incluye:</div>
+            <ul class="card-bullets">
+              <li><i class="fa-solid fa-check"></i> Respuestas automáticas y flujos inteligentes</li>
+              <li><i class="fa-solid fa-check"></i> Captura de leads y derivación a asesores humanos</li>
+              <li><i class="fa-solid fa-check"></i> Integración con WhatsApp Business API / Redes</li>
+              <li><i class="fa-solid fa-check"></i> Panel de estadísticas de mensajes</li>
+            </ul>
+          </div>
+
+          <div class="card-footer">
+            <button onclick="openWhatsAppQuote('Chatbots e Inteligencia Artificial')" class="btn btn-outline-glass card-action-btn">
+              <i class="fa-brands fa-whatsapp"></i> Cotizar Chatbot
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 2: Sistemas a Medida (Mini ERP / Dashboards) -->
+        <div class="service-card code-card reveal-up delay-2">
+          <div>
+            <div class="card-icon">
+              <i class="fa-solid fa-diagram-project"></i>
+            </div>
+            <h3 class="card-title">Sistemas de Gestión a Medida</h3>
+            <p class="card-description">Desarrollo de software personalizado (Mini ERP, Dashboards, CRM o Sistemas de Reservas) adaptados 100% a las reglas de tu negocio.</p>
+
+            <div class="card-includes-title">Lo que incluye:</div>
+            <ul class="card-bullets">
+              <li><i class="fa-solid fa-check"></i> Control de inventario, stock y facturación</li>
+              <li><i class="fa-solid fa-check"></i> Gestión de clientes, usuarios y roles</li>
+              <li><i class="fa-solid fa-check"></i> Dashboards analíticos e informes en tiempo real</li>
+              <li><i class="fa-solid fa-check"></i> Arquitectura escalable y máxima seguridad</li>
+            </ul>
+          </div>
+
+          <div class="card-footer">
+            <button onclick="openWhatsAppQuote('Sistema de Gestión a Medida')" class="btn btn-primary-orange card-action-btn">
+              <i class="fa-brands fa-whatsapp"></i> Cotizar Sistema
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       ¿POR QUÉ ELEGIRNOS?
+       ========================================== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag pixel-tag">
+          <i class="fa-solid fa-shield-halved"></i> Garantía & Calidad
+        </span>
+        <h2>¿Por qué elegir Pixel & Code PY?</h2>
+        <p>Combinamos excelencia técnica con atención personalizada cercana para asegurar el éxito de tu proyecto.</p>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-card reveal-up delay-1">
+          <div class="why-icon">
+            <i class="fa-solid fa-code"></i>
+          </div>
+          <h3>Desarrollo 100% a Medida</h3>
+          <p>No usamos plantillas genéricas lentas. Creamos código limpio y estructurado diseñado específicamente para los objetivos de tu empresa.</p>
+        </div>
+
+        <div class="why-card reveal-up delay-2">
+          <div class="why-icon">
+            <i class="fa-solid fa-headset"></i>
+          </div>
+          <h3>Soporte Local en Paraguay</h3>
+          <p>Estamos en Itauguá. Hablamos tu mismo idioma, entendemos el mercado nacional y brindamos asistencia directa por WhatsApp o llamada.</p>
+        </div>
+
+        <div class="why-card reveal-up delay-3">
+          <div class="why-icon">
+            <i class="fa-solid fa-bolt"></i>
+          </div>
+          <h3>Diseño Moderno & Veloz</h3>
+          <p>Sitios web ultra rápidos que cargan en segundos, adaptados para cualquier celular y listos para convertir visitas en clientes reales.</p>
+        </div>
+
+        <div class="why-card reveal-up delay-1">
+          <div class="why-icon">
+            <i class="fa-solid fa-tags"></i>
+          </div>
+          <h3>Precios Accesibles</h3>
+          <p>Presupuestos transparentes sin costos ocultos, con facilidades de pago por etapas acordes a la realidad del mercado paraguayo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       PROCESO DE TRABAJO (TIMELINE)
+       ========================================== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag code-tag">
+          <i class="fa-solid fa-list-check"></i> Metodología
+        </span>
+        <h2>Nuestro Proceso de Trabajo</h2>
+        <p>Una ruta clara y transparente desde el primer contacto hasta el lanzamiento final.</p>
+      </div>
+
+      <div class="timeline reveal-up">
+        <div class="timeline-step">
+          <div class="timeline-number">1</div>
+          <h3 class="timeline-title">Consulta Inicial</h3>
+          <p class="timeline-desc">Escuchamos tus necesidades, definimos los requerimientos y alcances del proyecto.</p>
+        </div>
+
+        <div class="timeline-step">
+          <div class="timeline-number">2</div>
+          <h3 class="timeline-title">Propuesta y Cotización</h3>
+          <p class="timeline-desc">Te enviamos una propuesta detallada con costos transparentes y tiempos de entrega.</p>
+        </div>
+
+        <div class="timeline-step">
+          <div class="timeline-number">3</div>
+          <h3 class="timeline-title">Desarrollo y Avances</h3>
+          <p class="timeline-desc">Programamos la solución mostrando avances periódicos para validar el diseño y funciones.</p>
+        </div>
+
+        <div class="timeline-step">
+          <div class="timeline-number">4</div>
+          <h3 class="timeline-title">Entrega y Soporte</h3>
+          <p class="timeline-desc">Publicamos tu proyecto, capacitamos a tu equipo y brindamos garantía y soporte post-venta.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       SECCIÓN DE CONTACTO
+       ========================================== -->
+  <section id="contacto" class="section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag pixel-tag">
+          <i class="fa-solid fa-paper-plane"></i> Hablemos de tu Proyecto
+        </span>
+        <h2>Ponte en contacto con nosotros</h2>
+        <p>¿Tienes una idea en mente? Solicita tu cotización sin compromiso hoy mismo.</p>
+      </div>
+
+      <div class="contact-grid">
+        
+        <!-- Detalles de Contacto -->
+        <div class="contact-info-card reveal-up delay-1">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fa-brands fa-whatsapp"></i>
+            </div>
+            <div class="contact-details">
+              <h4>WhatsApp Directo</h4>
+              <p><a href="javascript:void(0)" onclick="openWhatsAppQuote('Consulta por WhatsApp')">+595 992 178 480</a></p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon" style="background: rgba(220, 39, 67, 0.15); color: #dc2743;">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Instagram Oficial</h4>
+              <p><a href="https://www.instagram.com/pixel_code1001?igsi=ZHUxOHlnNWQ2bTc=" target="_blank" rel="noopener noreferrer">@pixel_code1001</a></p>
+              <a href="https://www.instagram.com/pixel_code1001?igsi=ZHUxOHlnNWQ2bTc=" target="_blank" rel="noopener noreferrer" class="btn btn-instagram btn-sm" style="margin-top: 0.5rem;">
+                <i class="fa-brands fa-instagram"></i> Ir a Instagram
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Ubicación Principal</h4>
+              <p>Itauguá, Departamento Central — Paraguay</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fa-solid fa-clock"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Horario de Atención</h4>
+              <p>Lunes a Viernes: 08:00 – 18:00 hs.<br>Sábados: 08:00 – 12:00 hs.</p>
+            </div>
+          </div>
+
+          <!-- Banner destacado de WhatsApp -->
+          <div class="big-whatsapp-banner">
+            <i class="fa-brands fa-whatsapp"></i>
+            <h3>¿Prefieres hablar directamente?</h3>
+            <p>Envíanos un mensaje y te responderemos en minutos.</p>
+            <button onclick="openWhatsAppQuote('Consulta Rápida')" class="btn btn-whatsapp">
+              <i class="fa-brands fa-whatsapp"></i> Iniciar Chat por WhatsApp
+            </button>
+          </div>
+        </div>
+
+        <!-- Formulario Inteligente -->
+        <div class="contact-form-box reveal-up delay-2">
+          <form id="contact-form">
+            <div class="form-group">
+              <label class="form-label" for="form-name">Nombre y Apellido / Empresa *</label>
+              <input type="text" id="form-name" class="form-control" placeholder="Ej. Juan Pérez - Muebles Paraguay" required maxlength="100" autocomplete="name">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="form-phone">Teléfono / WhatsApp *</label>
+              <input type="tel" id="form-phone" class="form-control" placeholder="Ej. 0981 123 456" required maxlength="30" autocomplete="tel">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="form-service">Servicio de Interés</label>
+              <select id="form-service" class="form-control">
+                <option value="Landing Page">Landing Page (Página Única)</option>
+                <option value="Web Corporativa / Profesional">Web Corporativa / Profesional</option>
+                <option value="Tienda Online (E-commerce)">Tienda Online (E-commerce)</option>
+                <option value="Chatbot Inteligente / WhatsApp">Chatbot Inteligente / WhatsApp</option>
+                <option value="Sistema de Gestión a Medida">Sistema de Gestión a Medida (ERP / CRM)</option>
+                <option value="Otro Servicio">Otro / Consulta General</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="form-message">Detalles del Mensaje</label>
+              <textarea id="form-message" class="form-control" placeholder="Cuéntanos brevemente de qué trata tu proyecto o empresa..." maxlength="1000"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary-orange" style="width: 100%;">
+              <i class="fa-paper-plane fa-regular"></i> Enviar Consulta por WhatsApp
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <div class="footer-about">
+          <a href="#inicio" class="brand-logo" aria-label="Pixel & Code PY Inicio">
+            <img src="assets/logo.png" alt="Pixel & Code PY Logo" id="footer-logo" onerror="this.onerror=null; this.src='assets/logo-icon.svg';">
+            <div class="brand-text">
+              <span class="text-gradient-pixel">PIXEL</span> & <span class="text-gradient-code">CODE</span>
+              <span class="py-tag">PY</span>
+            </div>
+          </a>
+          <p>
+            Software House especializada en el diseño y desarrollo de soluciones digitales modernas en Itauguá, Paraguay. Convertimos ideas en resultados medibles.
+          </p>
+          <div class="social-links">
+            <a href="https://www.instagram.com/pixel_code1001?igsi=ZHUxOHlnNWQ2bTc=" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram" style="background: linear-gradient(45deg, #f09433, #dc2743); color: white;"><i class="fa-brands fa-instagram"></i></a>
+            <a href="javascript:void(0)" onclick="openWhatsAppQuote('Cotiza por whatsapp')" class="social-icon" aria-label="WhatsApp" style="background: #25D366; color: white;"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Navegación</h4>
+          <ul class="footer-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#nosotros">Sobre Nosotros</a></li>
+            <li><a href="#servicios-web">Desarrollo Web</a></li>
+            <li><a href="#sistemas-code">Sistemas & IA</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Servicios</h4>
+          <ul class="footer-links">
+            <li><a href="#servicios-web">Landing Pages</a></li>
+            <li><a href="#servicios-web">Sitios Corporativos</a></li>
+            <li><a href="#servicios-web">Tiendas Online (E-commerce)</a></li>
+            <li><a href="#sistemas-code">Chatbots de WhatsApp</a></li>
+            <li><a href="#sistemas-code">Mini ERP & Dashboards</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Ubicación</h4>
+          <p style="font-size: 0.9rem; margin-bottom: 0.5rem;"><i class="fa-solid fa-map-pin" style="color: var(--code-orange-light);"></i> Itauguá, Paraguay</p>
+          <p style="font-size: 0.88rem;">Disponible para proyectos en todo Paraguay e internacionales.</p>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Pixel & Code PY. Todos los derechos reservados. | Itauguá, Paraguay</p>
+        <p><a href="#inicio" style="color: var(--text-muted); text-decoration: none;">Volver arriba <i class="fa-solid fa-arrow-up"></i></a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================
+       BOTÓN FLOTANTE DE WHATSAPP
+       ========================================== -->
+  <div class="floating-whatsapp-tooltip">
+    <i class="fa-brands fa-whatsapp"></i> ¡Cotiza por WhatsApp aquí!
+  </div>
+  <a href="javascript:void(0)" onclick="openWhatsAppQuote('Boton Flotante')" class="floating-whatsapp" aria-label="Cotizar por WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+</html>
